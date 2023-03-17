@@ -67,48 +67,60 @@ setInterval(clockText, 1000)
 
 // PRAY
 let cards = document.querySelector('.cards');
-getPrayTime();
-function getPrayTime() {
+function getPrayerTimes(latitude, longitude){
+    const url = `https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=4`;
 
-    fetch("https://api.aladhan.com/v1/timingsByCity?city=cairo&country=egypt&method=8")
-        .then(response => response.json())
-        .then(data => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+    
+    const timings = data.data.timings;
+    cards.innerHTML = "";
+    
+    const prayersTimes = {
+     الفجر : timings.Fajr,
+     الشروق : timings.Sunrise,
+     الظهر : timings.Dhuhr,
+     العصر : timings.Asr,
+     المغرب : timings.Maghrib,
+     العشاء : timings.Isha,
+}
 
-            let times = data.data.timings;
+    for (const time in prayersTimes) {
 
-            const prayersTimes = {
-                الفجر: times.Imsak,
-                الشروق: times.Sunrise,
-                الظهر: times.Dhuhr,
-                العصر: times.Asr,
-                المغرب: times.Sunset,
-                العشاء: times.Isha,
-            };
-            cards.innerHTML = '';
-
-            for (let time in prayersTimes) {
-
-                cards.innerHTML +=
-                    `
-                    <div class="card">
-                        <div class="circle">
-                        <svg>
-                        <Circle cx="100" cy="100" r="100"></Circle>
-                    </svg>
-
-                    <div class="prayTime" style="color: #CD9A51">${prayersTimes[time]}</div>
-                        </div>
-                        
-                        <div dir="ltr"> 
-                        <p style="color: #607BAF">${time}</p>
-                        
-                        </div>
-                    </div>
-
-                        
+            cards.innerHTML +=
                 `
-            }
-        })
+                <div class="card">
+                <div class="circle">
+                <svg>
+                <Circle cx="100" cy="100" r="100"></Circle>
+            </svg>
+    
+            <div class="prayTime" style="color: #CD9A51">${prayersTimes[time]}</div>
+            </div>
+                    
+                    <div dir="ltr"> 
+                    <p style="color: #607BAF">${time}</p>
+                    
+                    </div>
+                </div>
+    
+                    
+            `
+            
+        }
 
-}  
+      });
+  }
 
+ 
+  navigator.geolocation.watchPosition(
+    (position) => {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      document.getElementById("latitude").innerHTML = latitude;
+      document.getElementById("longitude").innerHTML = longitude;
+      getPrayerTimes(latitude, longitude);
+    },
+    
+  );
