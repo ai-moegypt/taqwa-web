@@ -1,0 +1,63 @@
+
+.hadith{
+    display: block;
+}
+ 
+.hadithContainer{
+    min-height: 350px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px #ca9746;
+    background: #F5F6F3;
+    border-radius: 20px;
+    color: rgb(27, 23, 19);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:center; 
+    padding: 50px 20px;
+    margin-top: 45px;   
+    cursor: pointer;
+    display: block;
+    max-height: 120px;
+    overflow: hidden;
+    font-size: 20px;
+}
+.hadith .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.hadith .buttons div{
+    border: 1px #5E9D96 solid;
+    color: #ca9746;
+    margin-top: 12px;
+    border-radius: 15px;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14) , 0 7px 10px -5px rgba(76,175,88,.4) ;
+}
+.hadith .buttons .prev:hover{
+    transform: translateY(-5px);
+    
+    box-shadow: 0px 5px 10px 0px #5E9D96;
+}
+.hadith .buttons .next:hover{
+    transform: translateY(-5px);
+    
+    box-shadow: 0px 5px 10px 0px #5E9D96;
+}
+.btn2{
+    direction: rtl;
+}
+.hadith .buttons .number{
+    color: green;
+    background-color: transparent;
+    box-shadow: 0 2px 10px 0 #63AFBD ;
+    border:  1px rgb(139, 241, 108) solid;
+    border-radius: 15px;
+}
+
+
+

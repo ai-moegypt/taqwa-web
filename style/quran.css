@@ -1,0 +1,92 @@
+.surah-popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+    transform: translateY(100%);
+    
+}
+.surah-popup.active{
+    transform: translate(0);
+    transition: all .1s;
+}
+
+.close-popup{
+    position: sticky;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px 0px #ca9746;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: #12192C;
+    background-color: #5E9D96;
+}
+.close-popup i{
+  font-size: 20px;
+}
+.close-popup:hover{
+    box-shadow: 0px 5px 10px 0px #5E9D96;
+    transform: translateY(-2px);
+}
+.surah-popup .ayat{
+    padding: 3px 0px 40px;
+    margin-top: 10px;
+    margin-right: 0px;
+    color: #12192C;
+    text-align: center;
+}
+.surah-popup .ayat p{
+    line-height: 3;
+    font-family: Mushaf;
+    width: 100%;
+    border-bottom: 2px solid #f1dbc9;
+    
+    font-size: 1.5rem;
+
+}
+/* */
+ .surahsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    min-height: 400px;
+    cursor: pointer;
+  }
+.surahsContainer .surah{
+    min-height: 100px;
+    min-width: 150px;
+    height: 150px;
+    width: 150px;
+    background: #F5F6F3;
+    border-radius: 15px;
+    margin: 6px;
+    margin-bottom: 4px;
+    transition: all ease 0.2s;
+    border: 1px solid #333;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    /* padding: 23px; */
+  }
+  .surah{
+            
+    box-shadow: 0px 5px 10px 0px #ca9746;
+    text-align: center;
+  }
+  .surah:hover{
+    transform: translateY(-5px);
+    
+    box-shadow: 0px 5px 10px 0px #5E9D96;
+  }

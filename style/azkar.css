@@ -1,0 +1,62 @@
+.zekrContainer,
+.taspehContainer{
+    min-height: 350px;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px #ca9746;
+    background: #F5F6F3;
+    border-radius: 20px;
+    color: rgb(27, 23, 19);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:center; 
+    padding: 50px 20px;
+    margin-top: 45px;   
+    cursor: pointer;
+    display: block;
+    max-height: 100px;
+    font-size: 20px;
+}       
+
+.zekr .buttons,
+.taspeh .buttons1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.zekr .buttons div,
+.taspeh .buttons1 div{
+    border: 1px #5E9D96 solid;
+    color: #ca9746;
+    margin-top: 12px;
+    border-radius: 15px;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14) , 0 7px 10px -5px rgba(76,175,88,.4) ;
+}
+
+.zekr .buttons .prev:hover,
+.taspeh .buttons1 .prev1:hover{
+    transform: translateY(-5px);
+    
+    box-shadow: 0px 5px 10px 0px #5E9D96;
+}
+.zekr .buttons .next:hover,
+.taspeh .buttons1 .next1:hover{
+    transform: translateY(-5px);
+    
+    box-shadow: 0px 5px 10px 0px #5E9D96;
+}
+.btn2{
+    direction: rtl;
+}
+.zekr .buttons .number,
+.taspeh .buttons1 .number1{
+    color: #ca9746;
+    background-color: transparent;
+    box-shadow: 0 2px 10px 0 #63AFBD ;
+    border:  1px rgb(139, 241, 108) solid;
+    border-radius: 15px;
+}
