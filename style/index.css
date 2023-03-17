@@ -50,10 +50,10 @@ a {
   text-decoration: none;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 .section {
   padding: 4.5rem 0 2rem;
@@ -219,12 +219,20 @@ img {
   opacity:0.9;
 }
 
-.footer-basic .copyright {
+.footer-basic .copyright1 {
   text-align:center;
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
-  height: 6vh;
+  height: 4vh;
+}
+.footer-basic .copyright2 {
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+  height: 9vh;
+  padding: 4px;
 }
 /*  */
 
@@ -249,6 +257,7 @@ img {
   .nav__logo{
     display: none;
   }
+  
    .surahsContainer,
    .cards .card,
    .hadithContainer,
@@ -257,7 +266,9 @@ img {
    .taspeh .buttons1 div{
     cursor: none;
   }
-  
+  .zena img{
+    position: fixed;
+  }
   
   
 }
