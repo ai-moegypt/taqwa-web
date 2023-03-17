@@ -34,6 +34,7 @@ function getSurahs()
                 .then(data=>{
                     AyatContainer.innerHTML = "";
                     let Ayat =  data.data.ayahs;
+                    Ayat.innerHTML = "";
                     Ayat.forEach(aya=>{
                         popup.classList.add('active');
                         AyatContainer.innerHTML += `
