@@ -29,7 +29,7 @@ function getSurahs()
            AyatContainer = document.querySelector('.ayat');
            SurahsTitels.forEach((title,index)=>{
             title.addEventListener('click',()=>{
-                fetch(`http://api.alquran.cloud/v1/surah/${index +1}`)
+                fetch(`https://api.alquran.cloud/v1/surah/${index +1}`)
                 .then(response => response.json())
                 .then(data=>{
                     AyatContainer.innerHTML = "";
