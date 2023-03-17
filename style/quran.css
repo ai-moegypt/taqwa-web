@@ -62,7 +62,7 @@
     flex-wrap: wrap;
     text-align: center;
     min-height: 400px;
-/*     cursor: pointer; */
+    cursor: pointer;
   }
 .surahsContainer .surah{
     min-height: 100px;
