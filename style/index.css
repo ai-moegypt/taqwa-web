@@ -249,9 +249,15 @@ img {
   .nav__logo{
     display: none;
   }
-   body{
+   .surahsContainer,
+   .cards .card,
+   .hadithContainer,
+   .hadith .buttons div,
+   .taspehContainer,
+   .taspeh .buttons1 div{
     cursor: none;
   }
+  
   
   
 }
