@@ -269,6 +269,9 @@ a {
   .zena img{
     position: absolute;
   }
+  .header{
+    position: absolute;
+  }
   
   
 }
