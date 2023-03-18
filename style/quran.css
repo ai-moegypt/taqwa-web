@@ -14,6 +14,10 @@
     transform: translate(0);
     transition: all .1s;
 }
+.surah-popup.active img{
+  padding-right: 80%;
+  position: absolute;
+}
 
 .close-popup{
     position: sticky;
