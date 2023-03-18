@@ -52,7 +52,7 @@
     direction: rtl;
 }
 .hadith .buttons .number{
-    color: green;
+    color: #ca9746;
     background-color: transparent;
     box-shadow: 0 2px 10px 0 #63AFBD ;
     border:  1px rgb(139, 241, 108) solid;
