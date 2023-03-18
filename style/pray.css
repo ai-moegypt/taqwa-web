@@ -115,6 +115,7 @@ a {
   border-radius: 50%;
   border: 2px solid var(--body-color);
   z-index: var(--z-tooltip);
+  /* display: none; */
 }
 
 .clock__hour, 
