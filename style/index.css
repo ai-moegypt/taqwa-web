@@ -165,7 +165,7 @@ a {
 
 
 .footer-basic {
-  padding:40px 0;
+  padding:60px 0;
   background-color: #e9e7e4;
   border-radius: 20px;
   color:#4b4c4d;
@@ -231,7 +231,7 @@ a {
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
-  height: 9vh;
+  /* height: 9vh; */
   padding: 4px;
 }
 /*  */
@@ -275,6 +275,9 @@ a {
   
   
 }
+.social h2{
+  height: 4vh;
+}
 
 @media screen and (max-width: 320px) {
   .nav__name {
@@ -312,7 +315,6 @@ a {
   .nav__link:hover {
     color: var(--first-color);
   } 
-
 
   .active-link::before {
     content: '';
